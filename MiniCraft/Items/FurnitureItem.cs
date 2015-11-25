@@ -29,9 +29,9 @@ namespace MiniCraft.Items
             return furniture.sprite + 10 * 32;
         }
 
-        public override void renderIcon(Screen screen, int x, int y)
+        public override void renderIcon(Screen screen, int x, int y, int bits = 0)
         {
-            screen.render(x, y, getSprite(), getColor(), 0);
+            screen.render(x, y, getSprite(), getColor(), bits);
         }
 
         public override void renderInventory(Screen screen, int x, int y)

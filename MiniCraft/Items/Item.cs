@@ -35,7 +35,7 @@ namespace MiniCraft.Items
             return false;
         }
 
-        public virtual void renderIcon(Screen screen, int x, int y)
+        public virtual void renderIcon(Screen screen, int x, int y, int bits = 0)
         {
         }
 

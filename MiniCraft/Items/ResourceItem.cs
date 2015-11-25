@@ -36,9 +36,9 @@ namespace MiniCraft.Items
             return resource.sprite;
         }
 
-        public override void renderIcon(Screen screen, int x, int y)
+        public override void renderIcon(Screen screen, int x, int y, int bits = 0)
         {
-            screen.render(x, y, resource.sprite, resource.color, 0);
+            screen.render(x, y, resource.sprite, resource.color, bits);
         }
 
         public override void renderInventory(Screen screen, int x, int y)
