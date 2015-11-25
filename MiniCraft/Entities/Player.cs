@@ -343,7 +343,7 @@ namespace MiniCraft.Entities
                 screen.render(xo - 4, yo + 8, 7 + 13 * 32, ColorHelper.get(-1, 555, 555, 555), 3);
                 if (attackItem != null)
                 {
-                    attackItem.renderIcon(screen, xo - 4, yo + 4);
+                    attackItem.renderIcon(screen, xo - 4, yo + 4, Screen.BIT_MIRROR_X);
                 }
             }
             if (attackTime > 0 && attackDir == 3)
@@ -361,7 +361,7 @@ namespace MiniCraft.Entities
                 screen.render(xo + 8, yo + 8 + 4, 6 + 13 * 32, ColorHelper.get(-1, 555, 555, 555), 3);
                 if (attackItem != null)
                 {
-                    attackItem.renderIcon(screen, xo + 4, yo + 8 + 4);
+                    attackItem.renderIcon(screen, xo + 4, yo + 8 + 4, Screen.BIT_MIRROR_X | Screen.BIT_MIRROR_Y);
                 }
             }
 
