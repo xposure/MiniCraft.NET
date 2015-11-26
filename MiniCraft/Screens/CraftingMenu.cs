@@ -29,15 +29,15 @@ namespace MiniCraft.Screens
 
         public CraftingMenu(List<Recipe> recipes, Player player)
         {
-            this.recipes = new List<Recipe>(recipes);
             this.player = player;
 
             for (int i = 0; i < recipes.size(); i++)
             {
-                this.recipes.get(i).checkCanCraft(player);
+                recipes.get(i).checkCanCraft(player);
             }
 
-            recipes.Sort(new RecipeSorter());
+            this.recipes = new List<Recipe>(recipes);
+            this.recipes.Sort(new RecipeSorter());
         }
 
         public override void tick()
