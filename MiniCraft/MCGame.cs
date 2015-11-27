@@ -1,11 +1,8 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using MiniCraft.Entities;
 using MiniCraft.Gfx;
-using MiniCraft.Items;
-using MiniCraft.Items.Resources;
 using MiniCraft.Levels;
 using MiniCraft.Levels.Tiles;
 using MiniCraft.Screens;

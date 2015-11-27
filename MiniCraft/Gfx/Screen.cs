@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace MiniCraft.Gfx
+﻿namespace MiniCraft.Gfx
 {
     public class Screen
     {

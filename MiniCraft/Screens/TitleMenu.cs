@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using MiniCraft.Gfx;
-using MiniCraft.Items;
-using MiniCraft.Items.Resources;
 using MiniCraft.Sounds;
 
 namespace MiniCraft.Screens

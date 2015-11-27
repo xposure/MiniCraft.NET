@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using MiniCraft.Entities.Particles;
+﻿using MiniCraft.Entities.Particles;
 using MiniCraft.Gfx;
 using MiniCraft.Levels;
 using MiniCraft.Levels.Tiles;

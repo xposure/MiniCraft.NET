@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using MiniCraft.Gfx;
+﻿using MiniCraft.Gfx;
 using MiniCraft.Sounds;
 
 namespace MiniCraft.Entities.Particles
