@@ -12,15 +12,15 @@ namespace MiniCraft.Screens
 {
     public class CraftingMenu : Menu
     {
-        private class RecipeSorter : IComparer<Recipe>
-        {
-            public int Compare(Recipe r1, Recipe r2)
-            {
-                if (r1.canCraft && !r2.canCraft) return -1;
-                if (!r1.canCraft && r2.canCraft) return 1;
-                return r1.resultTemplate.getName().CompareTo(r2.resultTemplate.getName());
-            }
-        }
+        //private class RecipeSorter : IComparer<Recipe>
+        //{
+        //    public int Compare(Recipe r1, Recipe r2)
+        //    {
+        //        if (r1.canCraft && !r2.canCraft) return -1;
+        //        if (!r1.canCraft && r2.canCraft) return 1;
+        //        return r1.resultTemplate.getName().CompareTo(r2.resultTemplate.getName());
+        //    }
+        //}
 
         private Player player;
         private int selected = 0;
@@ -36,8 +36,8 @@ namespace MiniCraft.Screens
                 recipes.get(i).checkCanCraft(player);
             }
 
-            this.recipes = new List<Recipe>(recipes);
-            this.recipes.Sort(new RecipeSorter());
+            this.recipes = new List<Recipe>(recipes.OrderByDescending(x=>x.canCraft));
+            //this.recipes.Sort(new RecipeSorter());
         }
 
         public override void tick()
