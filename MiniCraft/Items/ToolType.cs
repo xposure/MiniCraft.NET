@@ -10,10 +10,10 @@ namespace MiniCraft.Items
         public static ToolType pickaxe = new ToolType("Pick", 3);
         public static ToolType axe = new ToolType("Axe", 4);
 
-        public readonly String name;
+        public readonly string name;
         public readonly int sprite;
 
-        private ToolType(String name, int sprite)
+        private ToolType(string name, int sprite)
         {
             this.name = name;
             this.sprite = sprite;

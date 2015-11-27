@@ -64,7 +64,7 @@ namespace MiniCraft.Items
             return placed;
         }
 
-        public override String getName()
+        public override string getName()
         {
             return furniture.name;
         }

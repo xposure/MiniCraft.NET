@@ -16,7 +16,7 @@ namespace MiniCraft
     {
         private const long serialVersionUID = 1L;
         private Random random = new Random();
-        public const String NAME = "Minicraft";
+        public const string NAME = "Minicraft";
         public const int HEIGHT = 120 ;
         public const int WIDTH = 160 ;
         public const int SCALE = 4;
@@ -211,7 +211,7 @@ namespace MiniCraft
 
         private void renderFocusNagger()
         {
-            String msg = "Click to focus!";
+            string msg = "Click to focus!";
             int xx = (WIDTH - msg.Length * 8) / 2;
             int yy = (HEIGHT - 8) / 2;
             int w = msg.Length;

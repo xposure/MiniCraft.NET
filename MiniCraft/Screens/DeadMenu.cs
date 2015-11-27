@@ -33,7 +33,7 @@ namespace MiniCraft.Screens
             minutes %= 60;
             seconds %= 60;
 
-            String timeString = "";
+            string timeString = "";
             if (hours > 0)
             {
                 timeString = hours + "h" + (minutes < 10 ? "0" : "") + minutes + "m";

@@ -9,11 +9,11 @@ namespace MiniCraft.Screens
         private Player player;
         private Inventory container;
         private int selected = 0;
-        private String title;
+        private string title;
         private int oSelected;
         private int window = 0;
 
-        public ContainerMenu(Player player, String title, Inventory container)
+        public ContainerMenu(Player player, string title, Inventory container)
         {
             this.player = player;
             this.title = title;

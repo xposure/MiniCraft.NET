@@ -11,11 +11,11 @@ namespace MiniCraft.Items.Resources
         private List<TileID> sourceTiles;
         private TileID targetTile;
 
-        public PlantableResource(String name, int sprite, int color, TileID targetTile, params TileID[] sourceTiles1) :
+        public PlantableResource(string name, int sprite, int color, TileID targetTile, params TileID[] sourceTiles1) :
             this(name, sprite, color, targetTile, new List<TileID>(sourceTiles1))
         { }
 
-        public PlantableResource(String name, int sprite, int color, TileID targetTile, List<TileID> sourceTiles)
+        public PlantableResource(string name, int sprite, int color, TileID targetTile, List<TileID> sourceTiles)
             : base(name, sprite, color)
         {
             this.sourceTiles = sourceTiles;

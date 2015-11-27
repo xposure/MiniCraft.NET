@@ -9,10 +9,10 @@ namespace MiniCraft.Entities
         private int pushTime = 0;
         private int pushDir = -1;
         public int col, sprite;
-        public String name;
+        public string name;
         private Player shouldTake;
 
-        public Furniture(String name)
+        public Furniture(string name)
         {
             this.name = name;
             xr = 3;

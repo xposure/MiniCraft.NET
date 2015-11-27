@@ -56,7 +56,7 @@ namespace MiniCraft.Items
             return 0;
         }
 
-        public virtual String getName()
+        public virtual string getName()
         {
             return "";
         }

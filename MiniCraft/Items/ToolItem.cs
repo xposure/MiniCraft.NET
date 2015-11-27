@@ -10,7 +10,7 @@ namespace MiniCraft.Items
         private Random random = new Random();
 
         public const int MAX_LEVEL = 5;
-        public static readonly String[] LEVEL_NAMES = { //
+        public static readonly string[] LEVEL_NAMES = { //
 	        "Wood", "Rock", "Iron", "Gold", "Gem"//
 	    };
 
@@ -52,7 +52,7 @@ namespace MiniCraft.Items
             Font.draw(getName(), screen, x + 8, y, ColorHelper.get(-1, 555, 555, 555));
         }
 
-        public override String getName()
+        public override string getName()
         {
             return LEVEL_NAMES[level] + " " + type.name;
         }

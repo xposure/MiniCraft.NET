@@ -8,7 +8,7 @@ namespace MiniCraft.Screens
     {
         private int selected = 0;
 
-        private static readonly String[] options = { "Start game", "How to play", "About" };
+        private static readonly string[] options = { "Start game", "How to play", "About" };
 
         public TitleMenu()
         {
@@ -59,7 +59,7 @@ namespace MiniCraft.Screens
 
             for (int i = 0; i < 3; i++)
             {
-                String msg = options[i];
+                string msg = options[i];
                 int col = ColorHelper.get(0, 222, 222, 222);
                 if (i == selected)
                 {

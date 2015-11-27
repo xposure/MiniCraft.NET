@@ -27,7 +27,7 @@ namespace MiniCraft.Items
             Font.draw(getName(), screen, x + 8, y, ColorHelper.get(-1, 555, 555, 555));
         }
 
-        public override String getName()
+        public override string getName()
         {
             return "Pow glove";
         }

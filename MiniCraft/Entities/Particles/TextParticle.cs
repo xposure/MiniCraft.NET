@@ -5,13 +5,13 @@ namespace MiniCraft.Entities.Particles
 {
     public class TextParticle : Entity
     {
-        private String msg;
+        private string msg;
         private int col;
         private int time = 0;
         public double xa, ya, za;
         public double xx, yy, zz;
 
-        public TextParticle(String msg, int x, int y, int col)
+        public TextParticle(string msg, int x, int y, int col)
         {
             this.msg = msg;
             this.x = x;

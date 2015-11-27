@@ -37,11 +37,11 @@ namespace MiniCraft.Items.Resources
         public static Resource cloth = new Resource("cloth", 1 + 4 * 32, ColorHelper.get(-1, 25, 252, 141));
         public static Resource gem = new Resource("gem", 13 + 4 * 32, ColorHelper.get(-1, 101, 404, 545));
 
-        public readonly String name;
+        public readonly string name;
         public readonly int sprite;
         public readonly int color;
 
-        public Resource(String name, int sprite, int color)
+        public Resource(string name, int sprite, int color)
         {
             if (name.Length > 6) throw new InvalidProgramException("Name cannot be longer than six characters!");
             this.name = name;

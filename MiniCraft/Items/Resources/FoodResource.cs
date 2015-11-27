@@ -10,7 +10,7 @@ namespace MiniCraft.Items.Resources
         private int heal;
         private int staminaCost;
 
-        public FoodResource(String name, int sprite, int color, int heal, int staminaCost)
+        public FoodResource(string name, int sprite, int color, int heal, int staminaCost)
             : base(name, sprite, color)
         {
             this.heal = heal;

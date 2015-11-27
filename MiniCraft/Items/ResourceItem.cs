@@ -47,7 +47,7 @@ namespace MiniCraft.Items
             Font.draw("" + cc, screen, x + 8, y, ColorHelper.get(-1, 444, 444, 444));
         }
 
-        public override String getName()
+        public override string getName()
         {
             return resource.name;
         }

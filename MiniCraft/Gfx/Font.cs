@@ -4,12 +4,12 @@ namespace MiniCraft.Gfx
 {
     public class Font
     {
-        private static String chars = "" + //
+        private static string chars = "" + //
                 "ABCDEFGHIJKLMNOPQRSTUVWXYZ      " + //
                 "0123456789.,!?'\"-+=/\\%()<>:;     " + //
                 "";
 
-        public static void draw(String msg, Screen screen, int x, int y, int col)
+        public static void draw(string msg, Screen screen, int x, int y, int col)
         {
             msg = msg.ToUpper();
             for (int i = 0; i < msg.Length; i++)
@@ -22,7 +22,7 @@ namespace MiniCraft.Gfx
             }
         }
 
-        public static void renderFrame(Screen screen, String title, int x0, int y0, int x1, int y1)
+        public static void renderFrame(Screen screen, string title, int x0, int y0, int x1, int y1)
         {
             for (int y = y0; y <= y1; y++)
             {
