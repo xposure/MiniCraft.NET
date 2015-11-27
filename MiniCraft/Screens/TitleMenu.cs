@@ -38,7 +38,7 @@ namespace MiniCraft.Screens
 
                     //if (Resource.allResources != null)
                     //    foreach (var resource in Resource.allResources)
-                            game.player.inventory.add(new ResourceItem(Resource.wood, 999));
+                    //        game.player.inventory.add(new ResourceItem(Resource.wood, 999));
                 }
                 if (selected == 1) game.setMenu(new InstructionsMenu(this));
                 if (selected == 2) game.setMenu(new AboutMenu(this));
