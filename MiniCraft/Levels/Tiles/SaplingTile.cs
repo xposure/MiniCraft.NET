@@ -12,7 +12,7 @@ namespace MiniCraft.Levels.Tiles
         private Tile onType;
         private Tile growsTo;
 
-        public SaplingTile(int id, Tile onType, Tile growsTo)
+        public SaplingTile(TileID id, Tile onType, Tile growsTo)
             : base(id)
         {
             this.onType = onType;

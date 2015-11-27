@@ -10,14 +10,14 @@ namespace MiniCraft.Items.Resources
 {
     public class PlantableResource : Resource
     {
-        private List<Tile> sourceTiles;
-        private Tile targetTile;
+        private List<TileID> sourceTiles;
+        private TileID targetTile;
 
-        public PlantableResource(String name, int sprite, int color, Tile targetTile, params Tile[] sourceTiles1) :
-            this(name, sprite, color, targetTile, new List<Tile>(sourceTiles1))
+        public PlantableResource(String name, int sprite, int color, TileID targetTile, params TileID[] sourceTiles1) :
+            this(name, sprite, color, targetTile, new List<TileID>(sourceTiles1))
         { }
 
-        public PlantableResource(String name, int sprite, int color, Tile targetTile, List<Tile> sourceTiles)
+        public PlantableResource(String name, int sprite, int color, TileID targetTile, List<TileID> sourceTiles)
             : base(name, sprite, color)
         {
             this.sourceTiles = sourceTiles;
@@ -26,9 +26,10 @@ namespace MiniCraft.Items.Resources
 
         public override bool interactOn(Tile tile, Level level, int xt, int yt, Player player, int attackDir)
         {
-            if (sourceTiles.Contains(tile))
+            if (sourceTiles.Contains((TileID)tile.id))
             {
-                level.setTile(xt, yt, targetTile, 0);
+                var tt = Tile.tiles[(byte)targetTile];
+                level.setTile(xt, yt, tt, 0);
                 return true;
             }
             return false;

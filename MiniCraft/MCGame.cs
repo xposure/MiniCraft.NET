@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MiniCraft.Entities;
 using MiniCraft.Gfx;
+using MiniCraft.Items;
+using MiniCraft.Items.Resources;
 using MiniCraft.Levels;
 using MiniCraft.Levels.Tiles;
 using MiniCraft.Screens;
@@ -18,9 +20,9 @@ namespace MiniCraft
         private const long serialVersionUID = 1L;
         private Random random = new Random();
         public const String NAME = "Minicraft";
-        public const int HEIGHT = 120;
-        public const int WIDTH = 160;
-        public const int SCALE = 4;
+        public const int HEIGHT = 120 * 2;
+        public const int WIDTH = 160 * 2;
+        public const int SCALE = 3;
 
         private Texture2D image;
         private Color[] pixels;
@@ -73,6 +75,7 @@ namespace MiniCraft
 
         public void resetGame()
         {
+
             playerDeadTime = 0;
             wonTimer = 0;
             gameTime = 0;

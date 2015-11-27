@@ -10,7 +10,7 @@ namespace MiniCraft.Levels.Tiles
     {
         private bool leadsUp;
 
-        public StairsTile(int id, bool leadsUp)
+        public StairsTile(TileID id, bool leadsUp)
             : base(id)
         {
             this.leadsUp = leadsUp;

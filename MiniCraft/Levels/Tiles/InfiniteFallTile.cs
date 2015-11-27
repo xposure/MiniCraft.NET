@@ -9,7 +9,7 @@ namespace MiniCraft.Levels.Tiles
 {
     public class InfiniteFallTile : Tile
     {
-        public InfiniteFallTile(int id)
+        public InfiniteFallTile(TileID id)
             : base(id)
         {
         }

@@ -11,10 +11,10 @@ namespace MiniCraft.Levels.Tiles
 {
     public class FlowerTile : GrassTile
     {
-        public FlowerTile(int id)
+        public FlowerTile(TileID id)
             : base(id)
         {
-            tiles[id] = this;
+            tiles[(byte)id] = this;
             connectsToGrass = true;
         }
 

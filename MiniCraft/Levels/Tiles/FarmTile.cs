@@ -10,7 +10,7 @@ namespace MiniCraft.Levels.Tiles
 {
     public class FarmTile : Tile
     {
-        public FarmTile(int id)
+        public FarmTile(TileID id)
             : base(id)
         {
         }

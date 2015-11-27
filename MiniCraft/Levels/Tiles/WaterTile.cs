@@ -9,7 +9,7 @@ namespace MiniCraft.Levels.Tiles
 {
     public class WaterTile : Tile
     {
-        public WaterTile(int id)
+        public WaterTile(TileID id)
             : base(id)
         {
             connectsToSand = true;

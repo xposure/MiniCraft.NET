@@ -12,7 +12,7 @@ namespace MiniCraft.Levels.Tiles
 
     public class WheatTile : Tile
     {
-        public WheatTile(int id)
+        public WheatTile(TileID id)
             : base(id)
         {
         }

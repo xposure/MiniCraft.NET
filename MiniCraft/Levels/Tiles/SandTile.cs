@@ -12,7 +12,7 @@ namespace MiniCraft.Levels.Tiles
 
     public class SandTile : Tile
     {
-        public SandTile(int id)
+        public SandTile(TileID id)
             : base(id)
         {
             connectsToSand = true;

@@ -12,7 +12,7 @@ namespace MiniCraft.Levels.Tiles
 {
     public class DirtTile : Tile
     {
-        public DirtTile(int id)
+        public DirtTile(TileID id)
             : base(id)
         {
         }

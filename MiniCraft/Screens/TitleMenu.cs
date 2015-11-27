@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MiniCraft.Gfx;
+using MiniCraft.Items;
+using MiniCraft.Items.Resources;
 using MiniCraft.Sounds;
 
 namespace MiniCraft.Screens
@@ -33,6 +35,10 @@ namespace MiniCraft.Screens
                     Sound.test.play();
                     game.resetGame();
                     game.setMenu(null);
+
+                    //if (Resource.allResources != null)
+                    //    foreach (var resource in Resource.allResources)
+                            game.player.inventory.add(new ResourceItem(Resource.wood, 999));
                 }
                 if (selected == 1) game.setMenu(new InstructionsMenu(this));
                 if (selected == 2) game.setMenu(new AboutMenu(this));

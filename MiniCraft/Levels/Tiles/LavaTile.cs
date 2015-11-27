@@ -10,7 +10,7 @@ namespace MiniCraft.Levels.Tiles
 
     public class LavaTile : Tile
     {
-        public LavaTile(int id)
+        public LavaTile(TileID id)
             : base(id)
         {
             connectsToSand = true;

@@ -9,7 +9,7 @@ namespace MiniCraft.Levels.Tiles
 {
     public class HoleTile : Tile
     {
-        public HoleTile(int id)
+        public HoleTile(TileID id)
             : base(id)
         {
             connectsToSand = true;

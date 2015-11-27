@@ -12,7 +12,7 @@ namespace MiniCraft.Levels.Tiles
 
     public class CloudTile : Tile
     {
-        public CloudTile(int id)
+        public CloudTile(TileID id)
             : base(id)
         {
         }

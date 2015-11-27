@@ -13,7 +13,7 @@ namespace MiniCraft.Levels.Tiles
 
     public class TreeTile : Tile
     {
-        public TreeTile(int id)
+        public TreeTile(TileID id)
             : base(id)
         {
             connectsToGrass = true;

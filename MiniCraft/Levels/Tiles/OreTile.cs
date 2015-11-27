@@ -16,7 +16,7 @@ namespace MiniCraft.Levels.Tiles
         private Resource toDrop;
         private int color;
 
-        public OreTile(int id, Resource toDrop)
+        public OreTile(TileID id, Resource toDrop)
             : base(id)
         {
             this.toDrop = toDrop;

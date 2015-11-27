@@ -10,7 +10,7 @@ namespace MiniCraft.Levels.Tiles
 
     public class StoneTile : Tile
     {
-        public StoneTile(int id)
+        public StoneTile(TileID id)
             : base(id)
         {
         }
