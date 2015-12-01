@@ -125,10 +125,10 @@ namespace MiniCraft
                 }
             }
 
-            while (pp < 256)
-            {
-                colors[pp++] = Color.Black;
-            }
+            //while (pp < 256)
+            //{
+            //    colors[pp++] = Color.Black;
+            //}
 
             var spriteSheet = Content.Load<Texture2D>("Textures/icons");
             screen = new Screen(WIDTH, HEIGHT, new SpriteSheet(spriteSheet));
