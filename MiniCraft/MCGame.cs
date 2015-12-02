@@ -9,6 +9,10 @@ using MiniCraft.Screens;
 
 namespace MiniCraft
 {
+    //https://github.com/Kivutar/tethical
+    //http://ffhacktics.com/smf/index.php?topic=6809.0
+    //https://github.com/rmcn/PythonEmbrace
+
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
@@ -17,8 +21,8 @@ namespace MiniCraft
         private const long serialVersionUID = 1L;
         private Random random = new Random();
         public const string NAME = "Minicraft";
-        public const int HEIGHT = 120 ;
-        public const int WIDTH = 160 ;
+        public const int HEIGHT = 120;
+        public const int WIDTH = 160;
         public const int SCALE = 4;
 
         private Texture2D image;
